@@ -4,7 +4,6 @@ import { StyleSheet, View, Platform } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import * as ImagePicker from "expo-image-picker";
 import * as MediaLibrary from "expo-media-library";
-import * as SplashScreen from "expo-splash-screen";
 import { captureRef } from "react-native-view-shot";
 import domtoimage from "dom-to-image";
 
@@ -17,9 +16,6 @@ import EmojiList from "./components/EmojiList";
 import EmojiSticker from "./components/EmojiSticker";
 
 const PlaceholderImage = require("./assets/images/background-image.png");
-
-SplashScreen.preventAutoHideAsync();
-setTimeout(SplashScreen.hideAsync, 5000);
 
 export default function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
